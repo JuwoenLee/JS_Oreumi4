@@ -29,6 +29,27 @@ function yourGradeTernary(yourScore) {
     console.log(message);
 }
 
+function yourGradeSwitch(yourScore) {
+    console.log("이건 switch");
+    switch (true) {
+        case yourScore >= 90 :
+            console.log('A');
+            break;
+        case yourScore >= 80 :
+            console.log('B');
+            break;
+        case yourScore >= 70 :
+            console.log('C');
+            break;
+        case yourScore >= 60 :
+            console.log('D');
+            break;
+        default :
+            console.log("강해져서 돌아와라");
+    }
+}
+
 const score = parseInt(prompt("점수를 입력하세요"));
 yourGradeIF(score);
 yourGradeTernary(score);
+yourGradeSwitch(score);
