@@ -3,8 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <title>Script test</title>
+
+    <style>
+        .big {
+            background-color: black;
+            color : white;
+            width : 100px;
+            height : 40px;
+        }
+    </style>
 </head>
 <body>
-
+    <button>click me</button>
+    <script>
+        const myBtn = document.querySelector("button");
+        myBtn.addEventListener('click', function () {
+            myBtn.innderHTML = "clicked!";
+            myBtn.classList.add("big");
+        })
+    </script>
 </body>
 </html>
